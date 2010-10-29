@@ -6,8 +6,6 @@ case 'glowna':$tpl='index';break;
 case 'odupie':$tpl='odupie';break;
 case 'kontakt':$tpl='kontakt';break;
 case 'wpisy':$tpl='wpisy';break;
-case 'wiecej1':$tpl='wiecej1';break;
-case 'wiecej2':$tpl='wiecej2';break;
 	default : $tpl='index';break;
 }
 $dane=array();
