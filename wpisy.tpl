@@ -9,4 +9,5 @@
 		<input type="submit" class="submit" value="wyślij"/>
 	</div>
 	<hr/>
+	<br/>
 </form>
