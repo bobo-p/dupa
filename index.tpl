@@ -2,13 +2,13 @@
 		<p>
 			<b>Dupa</b> to strona dla ludzi, którym się nudzi.
 		</p>
-		<a href=?dupa=odupie>Dowiedz się więcej>></a>
+		<a href="?dupa=odupie">Dowiedz się więcej>></a>
 		
 		<h2 class="naglowek">DLACZEGO DUPA?</h2>
 		<p>
 		Odpowiedź jest prosta:<b>bo tak</b>
 		</p>
-		<a href=?dupa=odupie>Dowiedz się więcej>></a>
+		<a href="?dupa=odupie">Dowiedz się więcej>></a>
 		
 		<h2 class="naglowek">OSTATNIE WPISY</h2>
 		<ul class="wpisy">
