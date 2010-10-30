@@ -1,11 +1,14 @@
-<?php /* Smarty version 2.6.26, created on 2010-10-29 22:56:41
+<?php /* Smarty version 2.6.26, created on 2010-10-30 19:54:55
          compiled from dupa.tpl */ ?>
 <!DOCTYPE html>
 
 <html>
 <head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<META http-equiv="Refresh" content="50">
+		<meta name="description" content="Strona o dupie" />
+		<META NAME="kewords" CONTENT="dupa, o dupie,twoja dupa,nuda,dup to strona dla ludzi ktorym sie nudzi,w dupie"/>
+		<meta name="author" content="Duperszpic" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/ >
+		<META http-equiv="Refresh" content="50"/>
 		<title>Dupa dla ludzi którym sie nudzi</title>
 		<link rel="stylesheet" type="text/css" href="dupa.css"/>
 </head>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2010-10-29 23:51:14
+<?php /* Smarty version 2.6.26, created on 2010-10-30 20:03:02
          compiled from index.tpl */ ?>
 <h2>ELO!</h2>
 		<p>
@@ -17,7 +17,7 @@
 		<?php unset($this->_sections['i']);
 $this->_sections['i']['name'] = 'i';
 $this->_sections['i']['loop'] = is_array($_loop=$this->_tpl_vars['dane']['wpisy']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
-$this->_sections['i']['max'] = (int)11;
+$this->_sections['i']['max'] = (int)14;
 $this->_sections['i']['show'] = true;
 if ($this->_sections['i']['max'] < 0)
     $this->_sections['i']['max'] = $this->_sections['i']['loop'];

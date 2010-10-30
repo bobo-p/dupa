@@ -7,7 +7,7 @@ require('Smarty.class.php');
 $smarty = new Smarty;
 
 $smarty->template_dir = "$path";
-$smarty->config_dir = "$path\configs";
+$smarty->config_dir = "$path\smarty\configs";
 $smarty->cache_dir = "$path\smarty\cache";
 $smarty->compile_dir = $path.'\smarty\templates_c';
 ?>

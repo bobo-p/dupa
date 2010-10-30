@@ -12,7 +12,7 @@
 		
 		<h2 class="naglowek">OSTATNIE WPISY</h2>
 		<ul class="wpisy">
-		{section name=i loop=$dane.wpisy max=11}
+		{section name=i loop=$dane.wpisy max=14}
 		<li>{$dane.wpisy[i]}</li>
 		{/section}
 			
