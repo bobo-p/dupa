@@ -4,7 +4,7 @@ function path($p) {
 	return str_replace(array('/','\\'), DIRECTORY_SEPARATOR, $p);
 }
 
-set_include_path(get_include_path().';'.path("$path/smarty/libs");
+set_include_path(get_include_path().';'.path("$path/smarty/libs"));
 require('Smarty.class.php');
 
 $smarty = new Smarty;
