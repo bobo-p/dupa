@@ -1,15 +1,6 @@
 <?php
 require('smarty.php');
 
-	function color()
-	{
-		for ($i = 0; $i<6; $i++)
-		{
-			$c .=  dechex(rand(0,15));
-		}
-		return "#$c";
-	}
-	$clr=color();
 switch($_GET['dupa'])
 {
 	case 'glowna':$tpl='index';break;
@@ -36,7 +27,6 @@ if($tpl=='index') {
 }
 
 $zm=$tpl.'.tpl';
-$smarty->assign('color',$clr);
 $smarty->assign('dane',$dane);
 $smarty->assign('tpl',$tpl);
 $smarty->assign('plik',$zm);
