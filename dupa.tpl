@@ -10,7 +10,7 @@
 		<title>Dupa dla ludzi którym sie nudzi</title>
 		<link rel="stylesheet" type="text/css" href="dupa.css"/>
 </head>
-<body>
+<body style="background-color:{$color};">
 		<!--Pasek-->
 		<h1>dupa</h1>
 		<ul class="navigate">
