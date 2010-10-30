@@ -3,8 +3,12 @@ $path=dirname(__FILE__);
 function path($p) {
 	return str_replace(array('/','\\'), DIRECTORY_SEPARATOR, $p);
 }
+function is_windows() {
+	return strpos(strtolower(PHP_OS), 'win') === 0;
+}
+$separator = is_windows() ? ';' : ':';
 
-set_include_path(get_include_path().';'.path("$path/smarty/libs"));
+set_include_path(get_include_path().$separator.path("$path/smarty/libs"));
 require('Smarty.class.php');
 
 $smarty = new Smarty;
