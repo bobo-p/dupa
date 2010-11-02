@@ -1,0 +1,107 @@
+	body {
+		margin:0;
+	}
+
+	h1 {
+		background:#B42020;
+		color:#fff;
+		margin:0 0 0 0;
+		padding:10px 0px 10px 10px;
+		font:bold 36px Arial;
+	}
+	h2 {
+		font:bold 48px "arial Black";
+		margin:0 0 0 12px;
+		text-transform: uppercase;
+	}
+	p {
+		margin:0 0 0 12px;
+		font:italic 24px Georgia;
+		color:#8f8f8f;
+	}
+	
+	h2.naglowek { margin-top:50px; }
+	
+	a {
+		font:italic 18px Georgia;
+		color:#b42020;
+		text-decoration:underline;
+		margin-left:13px;
+	}
+	div.dif{
+		overflow:hidden;
+	}
+	div.pasek {
+	
+	float:left;
+	width:86%;
+	}
+	div.pasek 2{
+	background:#B42020;
+	color:#fff;
+	float:left;
+	
+	}
+	ul.navigate  {
+		background:#B42020;
+		height=10px;
+		font:13px Arial;
+		letter-spacing:0.05em;
+		color:white;
+		
+	}
+	ul.navigate li  { 
+		display:inline; 
+		border-right:1px solid white;	
+	}
+	ul.navigate li a {
+		margin:0 0 0 0;
+		font:13px Arial;
+		color:white;
+		padding-left:5px;
+		text-decoration:none;
+	}
+	ul.wpisy { 
+		margin:0;
+		padding:0; 
+		}
+	ul.wpisy li {
+		display:block;
+		font:Italic 24px Georgia;
+		color:#8f8f8f;
+		margin:0 0 0 14px;
+		
+	}
+
+	#a1 { font-weight:bold; }
+	
+	#li3 { border-right:0; }
+
+	#p1dupa { text-indent:20px;}
+	
+	
+	.pole{ 
+		overflow:hidden;
+		width:460px;
+		}
+	label,.text{
+		float:left;
+		width:50px;
+	}
+	
+	.submit { float:right}
+	
+	textarea{ 
+		width:450px;
+		height:150px;
+		}
+	
+	.text{width:400px;}
+	
+	label { font:16px Arial;}
+	
+	form {
+		width:460px;
+		margin:0 auto;
+		}
+	

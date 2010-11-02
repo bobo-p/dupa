@@ -12,6 +12,7 @@
 </head>
 <body>
 		<!--Pasek-->
+		<div class="pasek">
 		<h1>dupa</h1>
 		<ul class="navigate">
 			{foreach from=$dane.linki key=link item=nazwa}
@@ -22,9 +23,11 @@
 				<a href="?dupa={$link}">{$nazwa}</a>
 				{/if}
 			</li>
+			
 			{/foreach}
 		</ul>
 		
+		</div>
 		{include file=$plik}
 </body>
 </html>		
