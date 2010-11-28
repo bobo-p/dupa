@@ -23,7 +23,7 @@ if($q->execute())
 	$licznik=0;
 	foreach( $w as $i)
 	{
-		$wpis=$i['nazwa'].'<p><b>napisal:</b></p>'.$i['wpis'];
+		$wpis=$i['nazwa'].' '."<b>napisał:</b>".$i['wpis'];
 		$dane['wpisy'][]=$wpis;
 		
 	}
