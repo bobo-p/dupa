@@ -15,16 +15,23 @@ $dane['linki'] = array('index' => "Strona główna", 'odupie' => 'O dupie', 'kon
 
 if($tpl=='index') {
 	
-	@ $file=fopen("wpis.txt",'rt');
-	if($file) {
-		while (!feof($file)) {
-			$wpis=fgets($file,999);
-			$dane['wpisy'][]=$wpis;
-		}
+	$baza=new PDO('mysql:dbname=dupa;host=localhost','root');
+$q=$baza->prepare('SELECT nazwa,wpis FROM wpisy');
+if($q->execute())
+{
+	$w=$q->fetchAll(PDO::FETCH_ASSOC);
+	$licznik=0;
+	foreach( $w as $i)
+	{
+		$wpis=$i['nazwa'].'<p><b>napisal:</b></p>'.$i['wpis'];
+		$dane['wpisy'][]=$wpis;
+		
 	}
 	
-	$dane['wpisy'] = array_reverse($dane['wpisy']);
 }
+	
+	$dane['wpisy'] = array_reverse($dane['wpisy']);
+				}
 
 $zm=$tpl.'.tpl';
 $smarty->assign('dane',$dane);
