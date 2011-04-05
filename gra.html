@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Oskar</title>
+
+<style type="text/css">
+h1 {
+	font-size: 100px;
+	text-align: center;
+	margin: 0;
+}
+span { display: block }
+
+#letter {
+	display: none;
+	text-align: center;
+	margin: 100px 0;
+	font-weight: bold;
+	font-size: 200px;
+	
+	-webkit-animation: dupa 1s infinite;
+}
+#time {
+display: none;
+	font-size: 100px;
+	text-align: center;
+}
+
+@-webkit-keyframes dupa {
+	0%, 100% {
+		margin: 100px 0;
+		font-size: 200px;
+	}
+	50% {
+		margin: 0;
+		font-size: 300px;
+	}
+}
+</style>
+
+</head>
+<body>
+<h1>Pres eny kej</h1>
+<span id="letter">X</span>
+<span id="time">0 sec</span>
+
+<script type="text/javascript" src="mootools.js"></script>
+<script type="text/javascript">
+var h1 = $$('h1')[0];
+var time = 0;
+var interval;
+var running = false;
+
+var Oskar = {
+	lose: function() {
+		running = false;
+		h1.set('text', 'JU LOST, traj egen');
+		$('letter').setStyle('display','none');
+		clearInterval(interval);
+	},
+	start: function(key) {
+		running = true;
+	
+		h1.set('text', 'NA£ HOLD YT!');
+		$('letter').set('text', key.toUpperCase()).setStyle('display','block');
+		
+		time = 0;
+		$('time').set('text', time+' sec');
+		
+		$('time').setStyle('display','block');
+		interval = Oskar.boom.periodical(1000);
+	},
+	boom: function() {
+		time++;
+		$('time').set('text', time+' sec');
+	}
+};
+
+window.addEvents({
+	'keydown': function(e) {
+		if (!running) Oskar.start(e.key);
+	},
+	'keyup': function() {
+		Oskar.lose();
+	}
+});
+</script>
+</body>
+</html>

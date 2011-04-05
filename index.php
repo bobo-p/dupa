@@ -1,7 +1,9 @@
 <?php
 require('smarty.php');
 
-switch($_GET['dupa'])
+$dupa = isset($_GET['dupa']) ? $_GET['dupa'] : '';
+
+switch($dupa)
 {
 	case 'glowna':$tpl='index';break;
 	case 'odupie':$tpl='odupie';break;
