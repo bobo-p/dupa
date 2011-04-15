@@ -15,20 +15,20 @@ $dane['linki'] = array('index' => "Strona główna", 'odupie' => 'O dupie', 'kon
 
 if($tpl=='index') {
 	
-	$baza=new PDO('mysql:dbname=dupa;host=localhost','root');
-$q=$baza->prepare('SELECT nazwa,wpis FROM wpisy');
-if($q->execute())
-{
-	$w=$q->fetchAll(PDO::FETCH_ASSOC);
+	@ $baza=new mysqli('mysql6.000webhost.com','a1589907_user','dupa123','a1589907_dupa');
+@ $q=$baza->query("SELECT nazwa,wpis FROM wpisy");
+
+	$w=$q->num_rows;
 	$licznik=0;
-	foreach( $w as $i)
+	for( $i=0;$i<$w; $i++)
 	{
-		$wpis=$i['nazwa'].' '."<b>napisał:</b>".$i['wpis'];
+		@ $x=$q->fetch_assoc();
+		$wpis=$x['nazwa'].' '."<b>napisał:</b>".$x['wpis'];
 		$dane['wpisy'][]=$wpis;
 		
 	}
-	
-}
+	if($q!=0)$q->free();
+	if(mysqli_connect_errno())@ $baza->close();
 	
 	$dane['wpisy'] = array_reverse($dane['wpisy']);
 				}
