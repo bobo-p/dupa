@@ -15,6 +15,9 @@
 		<div class="pasek">
 		<h1>dupa</h1>
 		<ul class="navigate">
+		    <li>
+		        <a href="gra.html">Gra</a>
+	        </li>
 			{foreach from=$dane.linki key=link item=nazwa}
 			<li>
 				{if $link == $tpl}
